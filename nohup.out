@@ -1,0 +1,969 @@
+2024-01-30 00:59:21,808:INFO - Visit me at http://0.0.0.0:5555
+2024-01-30 00:59:21,813:INFO - Broker: redis://localhost:6379/0
+2024-01-30 00:59:21,816:INFO - Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'daily_digest',
+ 'monthly_returns',
+ 'semi_yearly_returns',
+ 'weekly_returns',
+ 'weekly_sector_report']
+2024-01-30 00:59:21,820:INFO - Connected to redis://localhost:6379/0
+2024-01-30 19:22:20,657:INFO - Malformed HTTP message from 139.135.53.142: no colon in header line
+2024-01-30 19:22:21,689:INFO - Malformed HTTP message from 139.135.53.142: no colon in header line
+2024-01-30 19:23:49,576:INFO - Malformed HTTP message from 139.135.53.142: Malformed HTTP request line
+2024-02-01 10:35:37,984:INFO - Malformed HTTP message from 152.32.227.68: Malformed HTTP request line
+2024-02-01 16:05:34,483:INFO - Malformed HTTP message from 8.217.205.77: Malformed HTTP request line
+2024-02-06 09:29:46,385:INFO - Visit me at http://0.0.0.0:5555
+2024-02-06 09:29:46,390:INFO - Broker: redis://localhost:6379/0
+2024-02-06 09:29:46,393:INFO - Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'daily_digest',
+ 'monthly_returns',
+ 'semi_yearly_returns',
+ 'weekly_returns',
+ 'weekly_sector_report']
+Traceback (most recent call last):
+  File "/home/ceobuys/ceobuysell/venv/bin/celery", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/celery/__main__.py", line 15, in main
+    sys.exit(_main())
+             ^^^^^^^
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/celery/bin/celery.py", line 236, in main
+    return celery(auto_envvar_prefix="CELERY")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+2024-02-06 09:29:46,399:INFO - Connected to redis://localhost:6379/0
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/flower/command.py", line 57, in flower
+    flower_app.start()
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/flower/app.py", line 72, in start
+    self.listen(self.options.port, address=self.options.address,
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/tornado/web.py", line 2211, in listen
+    server.listen(
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/tornado/tcpserver.py", line 183, in listen
+    sockets = bind_sockets(
+              ^^^^^^^^^^^^^
+  File "/home/ceobuys/ceobuysell/venv/lib/python3.11/site-packages/tornado/netutil.py", line 162, in bind_sockets
+    sock.bind(sockaddr)
+OSError: [Errno 98] Address already in use
+2024-02-06 09:30:03,696:INFO - Malformed HTTP message from 139.135.53.142: Malformed HTTP request line
+2024-02-06 09:40:12,754:INFO - Malformed HTTP message from 139.135.53.142: no colon in header line
+2024-02-07 17:08:34,930:INFO - Malformed HTTP message from 139.135.53.142: Malformed HTTP version in HTTP Request-Line: ''
+2024-02-07 17:08:35,502:INFO - Malformed HTTP message from 139.135.53.142: Malformed HTTP version in HTTP Request-Line: ''
+2024-02-07 17:23:29,395:INFO - Malformed HTTP message from 139.135.53.142: no colon in header line
+2024-02-07 17:31:09,395:INFO - Malformed HTTP message from 139.135.53.142: Malformed HTTP version in HTTP Request-Line: ''
+2024-02-07 17:31:10,321:INFO - Malformed HTTP message from 139.135.53.142: Malformed HTTP version in HTTP Request-Line: '\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01¨'
+2024-02-08 06:10:58,663:INFO - Malformed HTTP message from 139.135.53.142: no colon in header line
+2024-02-08 06:10:59,193:INFO - Malformed HTTP message from 139.135.53.142: Malformed HTTP version in HTTP Request-Line: ''
+2024-02-09 15:38:19,352:INFO - Malformed HTTP message from 165.154.172.72: Malformed HTTP request line
+2024-02-09 15:39:22,218:INFO - Malformed HTTP message from 165.154.172.72: Malformed HTTP request line
+2024-02-09 17:03:45,817:INFO - Malformed HTTP message from 137.184.18.88: Malformed HTTP request line
+2024-02-12 00:03:50,062:INFO - Malformed HTTP message from 152.32.139.190: Malformed HTTP request line
+2024-02-19 12:36:27,962:INFO - Malformed HTTP message from 118.193.36.63: Malformed HTTP request line
+2024-02-19 12:37:32,071:INFO - Malformed HTTP message from 118.193.36.63: Malformed HTTP request line
+2024-02-20 14:27:42,223:INFO - Malformed HTTP message from 185.12.17.246: Malformed HTTP request line
+2024-02-26 11:29:37,157:INFO - Malformed HTTP message from 165.154.100.42: Malformed HTTP request line
+2024-03-02 13:24:24,338:INFO - Malformed HTTP message from 165.154.134.19: Malformed HTTP request line
+2024-03-02 13:25:27,093:INFO - Malformed HTTP message from 165.154.134.19: Malformed HTTP request line
+2024-03-06 07:11:55,154:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-03-07 18:53:19,356:INFO - Malformed HTTP message from 152.32.135.214: Malformed HTTP request line
+2024-03-11 14:28:32,365:INFO - Malformed HTTP message from 165.154.225.160: Malformed HTTP request line
+2024-03-14 10:02:22,716:INFO - Malformed HTTP message from 27.5.213.33: no colon in header line
+2024-03-18 07:48:38,926:INFO - Malformed HTTP message from 152.32.212.149: Malformed HTTP request line
+2024-03-18 07:49:41,940:INFO - Malformed HTTP message from 152.32.212.149: Malformed HTTP request line
+2024-03-20 12:17:48,107:INFO - Malformed HTTP message from 165.154.138.151: Malformed HTTP request line
+2024-03-20 17:14:32,152:INFO - Malformed HTTP message from 51.81.155.132: Malformed HTTP request line
+2024-03-22 12:33:24,347:INFO - Malformed HTTP message from 45.33.12.44: Malformed HTTP request line
+2024-03-27 05:07:59,486:INFO - Malformed HTTP message from 47.101.52.25: Malformed HTTP request line
+2024-03-31 08:10:50,707:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-04-02 09:57:06,482:INFO - Malformed HTTP message from 152.32.207.124: Malformed HTTP request line
+2024-04-02 09:58:09,083:INFO - Malformed HTTP message from 152.32.207.124: Malformed HTTP request line
+2024-04-04 18:36:17,809:INFO - Malformed HTTP message from 165.154.225.190: Malformed HTTP request line
+2024-04-05 14:58:02,698:INFO - Malformed HTTP message from 51.81.155.132: Malformed HTTP request line
+2024-04-09 17:31:43,297:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-04-10 03:03:20,642:INFO - Malformed HTTP message from 152.32.149.19: Malformed HTTP request line
+2024-04-15 04:19:52,336:INFO - Malformed HTTP message from 51.81.155.132: Malformed HTTP request line
+2024-04-28 04:26:28,549:INFO - Malformed HTTP message from 118.194.238.196: Malformed HTTP request line
+2024-04-29 01:40:08,975:INFO - Malformed HTTP message from 104.248.79.198: Malformed HTTP request line
+2024-04-29 02:01:56,548:INFO - Malformed HTTP message from 138.197.200.196: Malformed HTTP request line
+2024-04-29 13:35:56,422:INFO - Malformed HTTP message from 165.154.42.209: Malformed HTTP request line
+2024-04-29 13:36:59,442:INFO - Malformed HTTP message from 165.154.42.209: Malformed HTTP request line
+2024-05-04 11:30:17,814:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-05-04 16:36:01,197:INFO - Malformed HTTP message from 152.32.181.210: Malformed HTTP request line
+2024-05-05 09:03:46,255:INFO - Malformed HTTP message from 172.233.26.64: Malformed HTTP request line
+2024-05-10 19:03:33,844:INFO - Malformed HTTP message from 165.154.135.215: Malformed HTTP request line
+2024-05-10 19:04:36,637:INFO - Malformed HTTP message from 165.154.135.215: Malformed HTTP request line
+2024-05-11 03:22:45,417:INFO - Malformed HTTP message from 8.217.81.68: Malformed HTTP request line
+2024-05-13 06:52:14,895:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-05-14 10:51:31,042:INFO - Malformed HTTP message from 165.154.58.108: Malformed HTTP request line
+2024-05-14 18:24:32,720:INFO - Malformed HTTP message from 51.79.69.9: Malformed HTTP request line
+2024-05-23 05:19:54,094:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-05-24 10:33:35,470:INFO - Malformed HTTP message from 123.58.213.20: Malformed HTTP request line
+2024-05-24 10:34:39,105:INFO - Malformed HTTP message from 123.58.213.20: Malformed HTTP request line
+2024-05-24 22:56:32,362:INFO - Malformed HTTP message from 167.94.138.125: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-05-26 21:55:58,279:INFO - Malformed HTTP message from 167.248.133.182: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-05-30 00:54:06,164:INFO - Malformed HTTP message from 167.248.133.34: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-05-30 01:15:35,142:INFO - Malformed HTTP message from 167.94.138.47: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-05-31 16:53:20,488:INFO - Malformed HTTP message from 104.156.155.30: Malformed HTTP request line
+2024-06-01 13:10:40,564:INFO - Malformed HTTP message from 167.94.138.41: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-02 11:15:19,545:INFO - Malformed HTTP message from 172.233.14.167: Malformed HTTP request line
+2024-06-02 16:19:27,542:INFO - Malformed HTTP message from 172.233.27.203: Malformed HTTP request line
+2024-06-03 23:18:36,468:INFO - Malformed HTTP message from 152.32.206.49: Malformed HTTP request line
+2024-06-04 04:11:16,356:INFO - Malformed HTTP message from 206.168.34.181: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-06 08:41:05,859:INFO - Malformed HTTP message from 167.94.138.118: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-07 23:59:38,000:INFO - Malformed HTTP message from 162.142.125.194: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-09 02:35:17,191:INFO - Malformed HTTP message from 45.33.22.105: Malformed HTTP request line
+2024-06-09 21:04:24,466:INFO - Malformed HTTP message from 167.94.138.57: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-11 14:52:19,114:INFO - Malformed HTTP message from 165.154.41.205: Malformed HTTP request line
+2024-06-11 14:53:22,396:INFO - Malformed HTTP message from 165.154.41.205: Malformed HTTP request line
+2024-06-12 01:37:39,613:INFO - Malformed HTTP message from 167.94.138.62: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-12 12:26:45,736:INFO - Malformed HTTP message from 172.233.17.251: Malformed HTTP request line
+2024-06-12 15:56:04,177:INFO - Malformed HTTP message from 172.233.17.189: Malformed HTTP request line
+2024-06-12 16:13:06,165:INFO - Malformed HTTP message from 172.233.17.188: Malformed HTTP request line
+2024-06-12 16:52:39,036:INFO - Malformed HTTP message from 172.233.17.188: Malformed HTTP request line
+2024-06-14 00:11:54,821:INFO - Malformed HTTP message from 206.168.34.54: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-15 03:51:34,566:INFO - Malformed HTTP message from 118.193.47.114: Malformed HTTP request line
+2024-06-15 13:17:33,060:INFO - Malformed HTTP message from 172.104.4.17: Malformed HTTP request line
+2024-06-16 15:49:12,694:INFO - Malformed HTTP message from 167.94.138.51: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-16 16:19:08,045:INFO - Malformed HTTP message from 167.94.138.41: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-18 04:07:07,459:INFO - Malformed HTTP message from 206.168.34.125: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-19 23:18:09,165:INFO - Malformed HTTP message from 206.168.34.209: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-21 20:36:01,831:INFO - Malformed HTTP message from 206.168.34.34: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-21 23:19:02,011:INFO - Malformed HTTP message from 90.151.171.106: Malformed HTTP request line
+2024-06-22 23:09:06,850:INFO - Malformed HTTP message from 152.32.207.21: Malformed HTTP request line
+2024-06-23 23:28:38,989:INFO - Malformed HTTP message from 162.142.125.210: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-24 21:08:41,277:INFO - Malformed HTTP message from 206.168.34.45: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-26 05:59:18,841:INFO - Malformed HTTP message from 199.45.154.138: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-26 14:34:00,221:INFO - Malformed HTTP message from 90.151.171.108: Malformed HTTP request line
+2024-06-27 02:07:51,674:INFO - Malformed HTTP message from 172.232.195.104: Malformed HTTP request line
+2024-06-27 05:26:08,188:INFO - Malformed HTTP message from 206.168.34.218: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-27 09:38:02,665:INFO - Malformed HTTP message from 172.232.206.85: Malformed HTTP request line
+2024-06-28 05:08:42,093:INFO - Malformed HTTP message from 162.142.125.223: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-28 15:50:08,305:INFO - Malformed HTTP message from 104.156.155.35: Malformed HTTP request line
+2024-06-29 04:03:47,216:INFO - Malformed HTTP message from 167.94.145.104: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-29 14:23:29,075:INFO - Malformed HTTP message from 165.154.40.42: Malformed HTTP request line
+2024-06-29 14:24:32,166:INFO - Malformed HTTP message from 165.154.40.42: Malformed HTTP request line
+2024-06-29 16:57:43,456:INFO - Malformed HTTP message from 172.104.4.17: Malformed HTTP request line
+2024-06-29 23:58:41,323:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-06-30 08:28:43,340:INFO - Malformed HTTP message from 172.232.209.164: Malformed HTTP request line
+2024-06-30 09:23:53,884:INFO - Malformed HTTP message from 172.232.194.29: Malformed HTTP request line
+2024-06-30 09:53:56,699:INFO - Malformed HTTP message from 172.232.206.154: Malformed HTTP request line
+2024-06-30 22:51:05,688:INFO - Malformed HTTP message from 167.94.145.103: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-01 20:57:00,162:INFO - Malformed HTTP message from 206.168.34.194: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-01 21:29:42,366:INFO - Malformed HTTP message from 90.151.171.108: Malformed HTTP request line
+2024-07-02 23:10:11,528:INFO - Malformed HTTP message from 199.45.155.102: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-03 20:54:35,009:INFO - Malformed HTTP message from 152.32.185.141: Malformed HTTP request line
+2024-07-03 23:39:34,111:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-04 16:20:05,277:INFO - Malformed HTTP message from 172.232.203.102: Malformed HTTP request line
+2024-07-04 16:34:40,066:INFO - Malformed HTTP message from 172.232.195.31: Malformed HTTP request line
+2024-07-04 17:04:27,389:INFO - Malformed HTTP message from 172.232.209.178: Malformed HTTP request line
+2024-07-04 19:15:41,259:INFO - Malformed HTTP message from 167.94.146.53: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-05 20:53:45,235:INFO - Malformed HTTP message from 167.94.145.101: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-06 04:14:34,411:INFO - Malformed HTTP message from 90.151.171.106: Malformed HTTP request line
+2024-07-07 01:19:22,262:INFO - Malformed HTTP message from 167.94.138.118: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-08 09:42:11,364:INFO - Malformed HTTP message from 199.45.155.87: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-09 10:07:05,900:INFO - Malformed HTTP message from 199.45.155.90: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-09 10:20:14,775:INFO - Malformed HTTP message from 90.151.171.106: Malformed HTTP request line
+2024-07-09 22:01:31,766:INFO - Malformed HTTP message from 167.94.146.58: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-10 16:32:07,711:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-07-10 22:24:29,990:INFO - Malformed HTTP message from 172.232.209.144: Malformed HTTP request line
+2024-07-10 22:31:29,562:INFO - Malformed HTTP message from 172.232.194.222: Malformed HTTP request line
+2024-07-11 01:43:11,347:INFO - Malformed HTTP message from 162.142.125.205: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-12 02:37:21,031:INFO - Malformed HTTP message from 167.94.145.99: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-12 04:41:38,393:INFO - Malformed HTTP message from 45.56.102.54: Malformed HTTP request line
+2024-07-13 03:43:23,935:INFO - Malformed HTTP message from 167.94.146.52: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-14 03:43:34,106:INFO - Malformed HTTP message from 199.45.155.94: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-15 04:34:48,003:INFO - Malformed HTTP message from 206.168.34.43: Malformed HTTP request line
+2024-07-15 04:34:55,198:INFO - Malformed HTTP message from 206.168.34.43: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-15 17:32:43,017:INFO - Malformed HTTP message from 152.32.206.38: Malformed HTTP request line
+2024-07-15 17:33:45,689:INFO - Malformed HTTP message from 152.32.206.38: Malformed HTTP request line
+2024-07-16 02:21:59,862:INFO - Malformed HTTP message from 172.232.203.109: Malformed HTTP request line
+2024-07-16 04:22:45,211:INFO - Malformed HTTP message from 172.232.203.225: Malformed HTTP request line
+2024-07-16 06:43:59,264:INFO - Malformed HTTP message from 172.232.203.152: Malformed HTTP request line
+2024-07-16 08:26:25,106:INFO - Malformed HTTP message from 162.142.125.218: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-17 04:05:04,253:INFO - Malformed HTTP message from 162.142.125.223: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-17 23:36:26,611:INFO - Malformed HTTP message from 167.94.146.56: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-18 05:02:28,874:INFO - Malformed HTTP message from 165.154.182.219: Malformed HTTP request line
+2024-07-18 23:56:48,907:INFO - Malformed HTTP message from 162.142.125.212: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-19 23:45:33,820:INFO - Malformed HTTP message from 199.45.155.94: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-20 10:40:18,119:INFO - Malformed HTTP message from 172.232.209.61: Malformed HTTP request line
+2024-07-21 12:04:38,199:INFO - Malformed HTTP message from 172.104.4.17: Malformed HTTP request line
+2024-07-22 07:43:30,924:INFO - Malformed HTTP message from 172.104.4.17: Malformed HTTP request line
+2024-07-22 11:43:57,497:INFO - Malformed HTTP message from 167.94.145.99: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-23 03:46:00,974:INFO - Malformed HTTP message from 199.45.155.83: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-25 02:08:09,109:INFO - Malformed HTTP message from 162.142.125.40: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-25 10:02:52,789:INFO - Malformed HTTP message from 172.232.195.108: Malformed HTTP request line
+2024-07-25 23:09:07,781:INFO - Malformed HTTP message from 167.94.145.100: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-27 00:42:39,418:INFO - Malformed HTTP message from 162.142.125.208: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-28 01:25:53,807:INFO - Malformed HTTP message from 206.168.34.46: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-28 23:50:28,499:INFO - Malformed HTTP message from 118.26.104.19: Malformed HTTP request line
+2024-07-29 03:36:01,073:INFO - Malformed HTTP message from 167.94.146.63: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-30 00:10:39,581:INFO - Malformed HTTP message from 199.45.154.116: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-30 23:15:45,880:INFO - Malformed HTTP message from 167.94.145.110: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-07-31 12:56:57,538:INFO - Malformed HTTP message from 172.232.195.59: Malformed HTTP request line
+2024-07-31 21:29:26,935:INFO - Malformed HTTP message from 167.94.146.60: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-01 02:11:27,914:INFO - Malformed HTTP message from 47.100.109.158: Malformed HTTP request line
+2024-08-02 03:13:18,663:INFO - Malformed HTTP message from 206.168.34.39: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-02 17:42:21,939:INFO - Malformed HTTP message from 123.58.213.117: Malformed HTTP request line
+2024-08-02 17:43:24,997:INFO - Malformed HTTP message from 123.58.213.117: Malformed HTTP request line
+2024-08-03 07:04:17,445:INFO - Malformed HTTP message from 199.45.155.111: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-04 02:55:02,139:INFO - Malformed HTTP message from 199.45.154.148: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-04 22:06:53,441:INFO - Malformed HTTP message from 199.45.154.157: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-05 01:14:24,379:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-08-06 01:38:45,000:INFO - Malformed HTTP message from 199.45.154.140: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-06 21:17:24,303:INFO - Malformed HTTP message from 104.156.155.35: Malformed HTTP request line
+2024-08-07 06:35:42,193:INFO - Malformed HTTP message from 206.168.34.56: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-08 23:12:32,429:INFO - Malformed HTTP message from 199.45.155.111: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-08 23:13:10,042:INFO - Malformed HTTP message from 206.168.34.60: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-10 01:30:26,153:INFO - Malformed HTTP message from 128.1.44.213: Malformed HTTP request line
+2024-08-10 01:31:29,357:INFO - Malformed HTTP message from 128.1.44.213: Malformed HTTP request line
+2024-08-10 03:02:49,650:INFO - Malformed HTTP message from 167.94.146.58: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-10 23:58:08,546:INFO - Malformed HTTP message from 206.168.34.221: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-11 00:57:16,374:INFO - Malformed HTTP message from 172.232.203.218: Malformed HTTP request line
+2024-08-11 02:28:05,855:INFO - Malformed HTTP message from 172.232.203.191: Malformed HTTP request line
+2024-08-11 21:01:34,879:INFO - Malformed HTTP message from 206.168.34.216: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-12 23:55:00,079:INFO - Malformed HTTP message from 167.94.146.56: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-13 21:18:48,741:INFO - Malformed HTTP message from 167.94.146.48: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-14 10:43:06,221:INFO - Malformed HTTP message from 90.151.171.106: Malformed HTTP request line
+2024-08-15 01:34:53,125:INFO - Malformed HTTP message from 199.45.155.74: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-16 03:57:01,584:INFO - Malformed HTTP message from 152.32.156.117: Malformed HTTP request line
+2024-08-16 07:12:08,138:INFO - Malformed HTTP message from 199.45.155.101: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-16 14:30:40,873:INFO - Malformed HTTP message from 172.232.203.68: Malformed HTTP request line
+2024-08-16 14:37:39,467:INFO - Malformed HTTP message from 172.232.203.68: Malformed HTTP request line
+2024-08-17 12:00:22,299:INFO - Malformed HTTP message from 167.94.145.100: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-18 07:12:56,588:INFO - Malformed HTTP message from 206.168.34.206: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-18 23:07:19,759:INFO - Malformed HTTP message from 120.224.86.104: Malformed HTTP request line
+2024-08-19 01:07:18,144:INFO - Malformed HTTP message from 206.168.34.222: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-20 04:12:51,483:INFO - Malformed HTTP message from 167.94.145.97: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-20 17:42:38,676:INFO - Malformed HTTP message from 104.200.18.205: Malformed HTTP request line
+2024-08-20 17:45:21,910:INFO - Malformed HTTP message from 157.230.60.116: Malformed HTTP request line
+2024-08-20 21:54:23,276:INFO - Malformed HTTP message from 172.232.211.45: Malformed HTTP request line
+2024-08-20 23:51:34,502:INFO - Malformed HTTP message from 172.232.203.239: Malformed HTTP request line
+2024-08-21 06:52:39,659:INFO - Malformed HTTP message from 167.94.146.60: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-21 09:44:48,974:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-08-22 06:38:06,128:INFO - Malformed HTTP message from 167.94.145.98: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-23 04:33:53,544:INFO - Malformed HTTP message from 199.45.154.158: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-23 13:53:32,847:INFO - Malformed HTTP message from 172.232.203.233: Malformed HTTP request line
+2024-08-23 14:42:32,563:INFO - Malformed HTTP message from 172.232.203.130: Malformed HTTP request line
+2024-08-24 17:37:51,868:INFO - Malformed HTTP message from 206.168.34.125: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-24 18:29:28,119:INFO - Malformed HTTP message from 206.168.34.119: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-24 19:45:35,367:INFO - Malformed HTTP message from 152.32.181.210: Malformed HTTP request line
+2024-08-25 06:07:16,125:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-25 08:16:32,542:INFO - Malformed HTTP message from 172.104.4.17: Malformed HTTP request line
+2024-08-26 06:30:50,287:INFO - Malformed HTTP message from 206.168.34.213: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-27 06:10:48,864:INFO - Malformed HTTP message from 167.94.145.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-28 22:15:08,584:INFO - Malformed HTTP message from 162.142.125.209: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-29 00:05:05,211:INFO - Malformed HTTP message from 206.168.34.221: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-30 05:40:21,485:INFO - Malformed HTTP message from 206.168.34.42: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-08-30 22:09:51,116:INFO - Malformed HTTP message from 206.168.34.199: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-01 02:37:21,505:INFO - Malformed HTTP message from 101.36.121.72: Malformed HTTP request line
+2024-09-01 02:38:24,520:INFO - Malformed HTTP message from 101.36.121.72: Malformed HTTP request line
+2024-09-01 03:41:04,232:INFO - Malformed HTTP message from 199.45.155.88: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-02 00:49:24,562:INFO - Malformed HTTP message from 199.45.154.151: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-02 02:50:09,744:INFO - Malformed HTTP message from 165.154.164.79: Malformed HTTP request line
+2024-09-02 11:36:31,306:INFO - Malformed HTTP message from 172.104.4.17: Malformed HTTP request line
+2024-09-02 16:02:09,690:INFO - Malformed HTTP message from 172.104.4.17: Malformed HTTP request line
+2024-09-02 20:53:17,548:INFO - Malformed HTTP message from 162.142.125.218: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-03 21:00:45,423:INFO - Malformed HTTP message from 199.45.154.112: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-04 22:46:59,141:INFO - Malformed HTTP message from 199.45.154.133: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-06 07:37:05,657:INFO - Malformed HTTP message from 206.168.34.212: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-06 23:13:15,180:INFO - Malformed HTTP message from 206.168.34.204: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-08 03:08:19,893:INFO - Malformed HTTP message from 167.94.145.97: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-09 06:14:35,649:INFO - Malformed HTTP message from 199.45.155.105: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-10 07:56:47,752:INFO - Malformed HTTP message from 206.168.34.53: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-10 21:40:44,816:INFO - Malformed HTTP message from 172.104.4.17: Malformed HTTP request line
+2024-09-11 17:49:15,324:INFO - Malformed HTTP message from 167.94.145.98: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-12 19:58:17,340:INFO - Malformed HTTP message from 167.94.145.109: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-13 03:11:33,758:INFO - Malformed HTTP message from 199.45.155.80: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-13 13:15:48,639:INFO - Malformed HTTP message from 87.236.176.143: Malformed HTTP request line
+2024-09-14 14:30:13,597:INFO - Malformed HTTP message from 128.14.237.130: Malformed HTTP request line
+2024-09-14 20:07:42,510:INFO - Malformed HTTP message from 206.168.34.202: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-15 01:48:17,362:INFO - Malformed HTTP message from 118.193.57.62: Malformed HTTP request line
+2024-09-15 01:49:20,499:INFO - Malformed HTTP message from 118.193.57.62: Malformed HTTP request line
+2024-09-16 04:18:53,001:INFO - Malformed HTTP message from 206.168.34.217: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-16 08:18:39,573:INFO - Malformed HTTP message from 87.236.176.213: Malformed HTTP request line
+2024-09-17 07:00:10,906:INFO - Malformed HTTP message from 206.168.34.53: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-18 04:52:55,633:INFO - Malformed HTTP message from 199.45.155.77: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-19 00:52:23,593:INFO - Malformed HTTP message from 87.236.176.199: Malformed HTTP request line
+2024-09-19 12:19:18,890:INFO - Malformed HTTP message from 199.45.155.92: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-20 07:10:52,043:INFO - Malformed HTTP message from 199.45.154.138: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-21 18:22:37,528:INFO - Malformed HTTP message from 206.168.34.192: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-22 07:01:44,599:INFO - Malformed HTTP message from 206.168.34.219: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-22 07:09:30,436:INFO - Malformed HTTP message from 87.236.176.133: Malformed HTTP request line
+2024-09-22 08:12:16,464:INFO - Malformed HTTP message from 167.94.146.50: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-24 02:51:28,890:INFO - Malformed HTTP message from 167.94.138.115: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-24 07:40:10,691:INFO - Malformed HTTP message from 152.32.227.252: Malformed HTTP request line
+2024-09-25 03:47:37,156:INFO - Malformed HTTP message from 167.94.146.49: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-25 14:05:28,473:INFO - Malformed HTTP message from 87.236.176.29: Malformed HTTP request line
+2024-09-25 19:59:58,938:INFO - Malformed HTTP message from 167.94.146.60: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-26 22:09:09,259:INFO - Malformed HTTP message from 167.94.145.108: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-27 11:31:46,490:INFO - Malformed HTTP message from 162.142.125.37: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-28 09:04:30,222:INFO - Malformed HTTP message from 199.45.154.125: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-28 13:09:52,827:INFO - Malformed HTTP message from 87.236.176.61: Malformed HTTP request line
+2024-09-29 10:54:17,311:INFO - Malformed HTTP message from 206.168.34.209: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-09-30 02:21:44,216:INFO - Malformed HTTP message from 172.104.4.17: Malformed HTTP request line
+2024-09-30 11:44:20,081:INFO - Malformed HTTP message from 167.94.145.105: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-01 13:10:37,167:INFO - Malformed HTTP message from 167.94.145.101: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-01 14:49:29,851:INFO - Malformed HTTP message from 152.32.128.169: Malformed HTTP request line
+2024-10-01 20:15:39,362:INFO - Malformed HTTP message from 87.236.176.120: Malformed HTTP request line
+2024-10-03 05:59:50,247:INFO - Malformed HTTP message from 162.142.125.203: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-03 20:11:46,081:INFO - Malformed HTTP message from 68.183.30.36: Malformed HTTP request line
+2024-10-03 20:24:00,911:INFO - Malformed HTTP message from 165.227.25.252: Malformed HTTP request line
+2024-10-04 10:51:43,793:INFO - Malformed HTTP message from 199.45.154.152: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-04 17:48:07,806:INFO - Malformed HTTP message from 87.236.176.127: Malformed HTTP request line
+2024-10-05 05:00:14,616:INFO - Malformed HTTP message from 206.168.34.207: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-06 07:42:26,153:INFO - Malformed HTTP message from 206.168.34.45: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-07 08:09:11,804:INFO - Malformed HTTP message from 162.142.125.202: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-07 09:29:06,544:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-10-07 19:40:59,489:INFO - Malformed HTTP message from 87.236.176.203: Malformed HTTP request line
+2024-10-08 08:59:46,067:INFO - Malformed HTTP message from 199.45.154.130: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-09 07:02:21,742:INFO - Malformed HTTP message from 162.142.125.218: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-10 04:23:41,297:INFO - Malformed HTTP message from 162.142.125.213: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-11 00:49:17,511:INFO - Malformed HTTP message from 87.236.176.174: Malformed HTTP request line
+2024-10-11 08:45:32,047:INFO - Malformed HTTP message from 167.94.145.109: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-12 05:09:27,040:INFO - Malformed HTTP message from 206.168.34.119: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-12 21:49:39,582:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-10-13 04:43:36,563:INFO - Malformed HTTP message from 199.45.154.151: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-13 18:59:45,023:INFO - Malformed HTTP message from 152.32.135.214: Malformed HTTP request line
+2024-10-14 05:02:26,877:INFO - Malformed HTTP message from 206.168.34.202: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-15 03:11:00,519:INFO - Malformed HTTP message from 101.36.108.134: Malformed HTTP request line
+2024-10-15 03:12:03,619:INFO - Malformed HTTP message from 101.36.108.134: Malformed HTTP request line
+2024-10-15 04:32:00,505:INFO - Malformed HTTP message from 167.94.146.58: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-16 07:48:14,536:INFO - Malformed HTTP message from 206.168.34.222: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-17 05:39:37,191:INFO - Malformed HTTP message from 199.45.154.140: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-18 06:04:36,797:INFO - Malformed HTTP message from 167.94.146.48: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-19 06:25:22,584:INFO - Malformed HTTP message from 199.45.154.113: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-19 22:54:14,843:INFO - Malformed HTTP message from 15.204.47.3: Malformed HTTP request line
+2024-10-20 05:17:33,981:INFO - Malformed HTTP message from 162.142.125.201: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-21 07:34:22,183:INFO - Malformed HTTP message from 206.168.34.36: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-22 08:07:32,252:INFO - Malformed HTTP message from 199.45.155.105: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-23 10:30:48,959:INFO - Malformed HTTP message from 199.45.154.139: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-23 19:05:23,987:INFO - Malformed HTTP message from 152.32.159.79: Malformed HTTP request line
+2024-10-24 05:18:01,883:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-25 09:50:50,622:INFO - Malformed HTTP message from 167.94.145.104: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-26 06:08:05,510:INFO - Malformed HTTP message from 167.94.146.48: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-27 07:32:36,237:INFO - Malformed HTTP message from 66.228.61.89: Malformed HTTP request line
+2024-10-27 08:18:16,650:INFO - Malformed HTTP message from 206.168.34.216: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-28 08:44:23,972:INFO - Malformed HTTP message from 199.45.154.143: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-29 04:35:07,522:INFO - Malformed HTTP message from 15.204.47.3: Malformed HTTP request line
+2024-10-29 10:20:17,266:INFO - Malformed HTTP message from 167.94.145.99: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-30 00:33:00,672:INFO - Malformed HTTP message from 167.94.145.101: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-10-30 19:18:32,026:INFO - Malformed HTTP message from 152.32.141.176: Malformed HTTP request line
+2024-10-30 19:19:35,015:INFO - Malformed HTTP message from 152.32.141.176: Malformed HTTP request line
+2024-10-31 20:40:05,750:INFO - Malformed HTTP message from 199.45.154.136: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-01 12:10:49,013:INFO - Malformed HTTP message from 165.154.182.219: Malformed HTTP request line
+2024-11-02 09:01:14,064:INFO - Malformed HTTP message from 199.45.155.109: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-02 09:12:20,697:INFO - Malformed HTTP message from 167.94.138.115: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-02 09:48:48,418:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP request line
+2024-11-02 14:31:51,975:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2024-11-03 12:11:42,575:INFO - Malformed HTTP message from 199.45.154.154: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-04 08:27:09,076:INFO - Malformed HTTP message from 199.45.155.66: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-05 18:39:10,673:INFO - Malformed HTTP message from 199.45.155.87: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-07 03:12:30,782:INFO - Malformed HTTP message from 206.168.34.216: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-07 06:35:18,397:INFO - Malformed HTTP message from 199.45.154.135: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-08 08:37:52,378:INFO - Malformed HTTP message from 167.94.146.63: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-08 15:51:15,660:INFO - Malformed HTTP message from 50.116.21.44: Malformed HTTP request line
+2024-11-09 01:55:24,898:INFO - Malformed HTTP message from 167.94.145.111: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-09 15:12:51,874:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-09 17:16:31,910:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: ''
+2024-11-10 11:34:28,122:INFO - Malformed HTTP message from 118.194.238.196: Malformed HTTP request line
+2024-11-10 16:02:43,930:INFO - Malformed HTTP message from 45.33.109.18: Malformed HTTP request line
+2024-11-10 22:18:36,071:INFO - Malformed HTTP message from 167.94.146.51: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-11 10:43:51,824:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-11 10:43:52,835:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-12 10:16:06,626:INFO - Malformed HTTP message from 167.94.138.38: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-13 04:58:06,861:INFO - Malformed HTTP message from 172.104.4.17: Malformed HTTP request line
+2024-11-13 10:49:12,606:INFO - Malformed HTTP message from 206.168.34.54: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-13 18:07:44,710:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-13 21:47:16,709:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-14 09:13:50,586:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: 'úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93'
+2024-11-14 13:21:46,728:INFO - Malformed HTTP message from 47.95.200.237: Malformed HTTP request line
+2024-11-14 16:31:29,494:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-14 16:31:30,458:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: '\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93'
+2024-11-15 07:34:17,279:INFO - Malformed HTTP message from 167.94.146.48: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-15 11:32:27,722:INFO - Malformed HTTP message from 162.142.125.221: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-16 03:44:50,990:INFO - Malformed HTTP message from 199.45.155.83: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-17 09:49:49,452:INFO - Malformed HTTP message from 162.142.125.198: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-17 20:14:51,345:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-17 23:49:31,343:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: ''
+2024-11-18 05:06:28,553:INFO - Malformed HTTP message from 199.45.155.102: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-18 10:57:38,961:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-19 04:37:49,310:INFO - Malformed HTTP message from 199.45.155.96: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-19 05:04:25,385:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: '\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93'
+2024-11-20 03:53:23,297:INFO - Malformed HTTP message from 199.45.155.89: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-20 23:36:22,527:INFO - Malformed HTTP message from 134.209.59.198: Malformed HTTP request line
+2024-11-21 01:29:05,350:INFO - Malformed HTTP message from 162.142.125.212: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-21 15:22:38,783:INFO - Malformed HTTP message from 165.154.164.37: Malformed HTTP request line
+2024-11-22 04:33:48,927:INFO - Malformed HTTP message from 199.45.155.85: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-22 06:40:01,174:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-23 05:57:22,590:INFO - Malformed HTTP message from 167.94.145.98: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-23 10:03:31,409:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: ''
+2024-11-23 10:03:33,418:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP request line
+2024-11-24 02:08:28,469:INFO - Malformed HTTP message from 167.94.145.101: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-24 17:41:34,176:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP request line
+2024-11-24 17:41:35,189:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP request line
+2024-11-25 07:17:20,388:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: ''
+2024-11-25 16:01:42,860:INFO - Malformed HTTP message from 167.94.138.112: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-25 19:31:11,232:INFO - Malformed HTTP message from 199.45.155.91: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-26 12:24:44,823:INFO - Malformed HTTP message from 104.156.155.30: Malformed HTTP request line
+2024-11-26 18:23:32,884:INFO - Malformed HTTP message from 199.45.154.135: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-27 05:59:03,328:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: 'ÊÊ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93'
+2024-11-27 05:59:05,341:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: ''
+2024-11-27 19:34:02,166:INFO - Malformed HTTP message from 199.45.154.115: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-28 05:00:38,631:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: ''
+2024-11-28 05:00:39,625:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: ''
+2024-11-28 05:00:40,638:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: ''
+2024-11-28 07:33:52,223:INFO - Malformed HTTP message from 199.45.154.151: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-29 04:24:10,957:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-29 04:24:11,962:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-29 12:43:41,106:INFO - Malformed HTTP message from 199.45.155.78: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-11-30 04:01:44,638:INFO - Malformed HTTP message from 141.98.7.248: no colon in header line
+2024-11-30 04:01:45,620:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP version in HTTP Request-Line: ''
+2024-11-30 15:37:09,483:INFO - Malformed HTTP message from 141.98.7.248: Malformed HTTP request line
+2024-12-01 03:01:08,580:INFO - Malformed HTTP message from 167.94.145.110: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-01 03:12:29,533:INFO - Malformed HTTP message from 206.168.34.200: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-02 13:05:11,140:INFO - Malformed HTTP message from 167.94.146.62: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-03 15:51:28,466:INFO - Malformed HTTP message from 206.168.34.43: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-04 02:08:46,302:INFO - Malformed HTTP message from 15.204.142.151: Malformed HTTP request line
+2024-12-04 02:30:24,850:INFO - Malformed HTTP message from 61.190.137.130: Malformed HTTP request line
+2024-12-05 05:29:35,330:INFO - Malformed HTTP message from 199.45.154.156: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-06 04:30:57,077:INFO - Malformed HTTP message from 167.94.146.56: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-06 12:25:03,020:INFO - Malformed HTTP message from 152.32.140.198: Malformed HTTP request line
+2024-12-06 18:56:16,427:INFO - Malformed HTTP message from 45.135.95.25: Malformed HTTP request line
+2024-12-06 18:56:16,661:INFO - Malformed HTTP message from 45.135.95.25: Malformed HTTP request line
+2024-12-06 18:56:42,547:INFO - Malformed HTTP message from 45.135.95.25: Malformed HTTP version in HTTP Request-Line: 'RTSP/1.0'
+2024-12-07 00:02:02,282:INFO - Malformed HTTP message from 152.32.213.68: Malformed HTTP request line
+2024-12-07 00:03:05,275:INFO - Malformed HTTP message from 152.32.213.68: Malformed HTTP request line
+2024-12-07 08:11:47,000:INFO - Malformed HTTP message from 167.94.146.52: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-08 14:28:44,091:INFO - Malformed HTTP message from 47.237.104.241: Malformed HTTP request line
+2024-12-08 16:27:37,362:INFO - Malformed HTTP message from 162.142.125.198: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-08 16:28:16,269:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-08 23:30:04,980:INFO - Malformed HTTP message from 167.94.145.104: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-09 02:08:49,711:INFO - Malformed HTTP message from 15.204.47.2: Malformed HTTP request line
+2024-12-10 06:13:38,450:INFO - Malformed HTTP message from 199.45.154.151: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-11 10:32:09,568:INFO - Malformed HTTP message from 162.142.125.218: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-11 18:44:16,015:INFO - Malformed HTTP message from 45.56.78.131: Malformed HTTP request line
+2024-12-12 07:42:35,555:INFO - Malformed HTTP message from 167.94.146.54: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-12 23:17:28,573:INFO - Malformed HTTP message from 162.142.125.221: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-13 20:28:33,358:INFO - Malformed HTTP message from 205.210.31.40: no colon in header line
+2024-12-15 00:56:13,878:INFO - Malformed HTTP message from 167.94.145.105: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-16 01:22:52,302:INFO - Malformed HTTP message from 206.168.34.42: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-16 14:04:01,521:INFO - Malformed HTTP message from 162.142.125.221: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-17 12:17:53,292:INFO - Malformed HTTP message from 199.45.155.76: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-19 01:31:10,635:INFO - Malformed HTTP message from 167.94.145.96: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-20 12:31:04,298:INFO - Malformed HTTP message from 199.45.155.78: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-20 18:26:37,818:INFO - Malformed HTTP message from 167.94.138.127: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-21 12:09:33,092:INFO - Malformed HTTP message from 165.154.11.202: Malformed HTTP request line
+2024-12-21 12:10:36,039:INFO - Malformed HTTP message from 165.154.11.202: Malformed HTTP request line
+2024-12-21 12:52:06,669:INFO - Malformed HTTP message from 162.142.125.207: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-22 01:58:26,722:INFO - Malformed HTTP message from 199.45.154.146: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-22 09:45:28,029:INFO - Malformed HTTP message from 167.94.138.51: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-22 12:17:56,160:INFO - Malformed HTTP message from 167.94.145.111: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-24 01:11:55,172:INFO - Malformed HTTP message from 167.94.145.105: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-24 04:04:10,452:INFO - Malformed HTTP message from 162.142.125.35: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-24 12:04:44,412:INFO - Malformed HTTP message from 167.94.138.165: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-24 12:06:24,451:INFO - Malformed HTTP message from 206.168.34.213: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-24 17:36:31,537:INFO - Malformed HTTP message from 167.94.145.105: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-25 05:56:52,239:INFO - Malformed HTTP message from 167.94.145.110: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-25 20:30:54,952:INFO - Malformed HTTP message from 47.252.50.84: Malformed HTTP request line
+2024-12-26 04:54:36,050:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-26 15:27:14,354:WARNING - 404 GET /worker/.git/config (27.5.199.24): Unknown worker '.git/config'
+2024-12-26 15:27:14,358:WARNING - 404 GET /worker/.env (27.5.199.24): Unknown worker '.env'
+2024-12-26 15:27:15,364:WARNING - Inspect method scheduled failed
+2024-12-26 15:27:15,365:WARNING - Inspect method active failed
+2024-12-26 15:27:15,369:WARNING - Inspect method stats failed
+2024-12-26 15:27:15,370:WARNING - Inspect method registered failed
+2024-12-26 15:27:15,372:WARNING - Inspect method active_queues failed
+2024-12-26 15:27:15,372:WARNING - Inspect method reserved failed
+2024-12-26 15:27:16,370:WARNING - Inspect method revoked failed
+2024-12-26 15:27:16,372:WARNING - Inspect method conf failed
+2024-12-26 15:27:16,376:WARNING - Inspect method stats failed
+2024-12-26 15:27:16,380:WARNING - Inspect method active_queues failed
+2024-12-26 15:27:16,380:WARNING - Inspect method scheduled failed
+2024-12-26 15:27:16,381:WARNING - Inspect method registered failed
+2024-12-26 15:27:17,376:WARNING - Inspect method reserved failed
+2024-12-26 15:27:17,377:WARNING - Inspect method active failed
+2024-12-26 15:27:17,382:WARNING - Inspect method revoked failed
+2024-12-26 15:27:17,384:WARNING - Inspect method conf failed
+2024-12-27 01:23:18,545:INFO - Malformed HTTP message from 15.204.142.151: Malformed HTTP request line
+2024-12-27 23:01:06,292:INFO - Malformed HTTP message from 162.142.125.193: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-28 00:26:33,733:INFO - Malformed HTTP message from 199.45.155.72: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-29 11:47:18,356:INFO - Malformed HTTP message from 165.154.51.221: Malformed HTTP request line
+2024-12-29 11:48:21,426:INFO - Malformed HTTP message from 165.154.51.221: Malformed HTTP request line
+2024-12-29 13:30:45,554:INFO - Malformed HTTP message from 206.168.34.192: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-29 23:21:14,013:INFO - Malformed HTTP message from 199.45.154.124: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-30 22:13:52,793:INFO - Malformed HTTP message from 206.168.34.93: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2024-12-31 10:43:09,747:INFO - Malformed HTTP message from 167.99.106.194: Malformed HTTP request line
+2025-01-01 01:02:39,176:INFO - Malformed HTTP message from 104.156.155.30: Malformed HTTP request line
+2025-01-01 02:37:22,081:INFO - Malformed HTTP message from 152.32.165.32: Malformed HTTP request line
+2025-01-01 23:37:08,162:INFO - Malformed HTTP message from 162.142.125.195: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-02 22:39:46,347:INFO - Malformed HTTP message from 167.94.146.63: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-03 21:53:23,820:INFO - Malformed HTTP message from 206.168.34.84: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-04 22:41:18,875:INFO - Malformed HTTP message from 199.45.155.68: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-05 23:32:09,471:INFO - Malformed HTTP message from 167.94.146.59: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-06 21:50:58,254:INFO - Malformed HTTP message from 167.94.145.111: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-07 23:06:48,995:INFO - Malformed HTTP message from 206.168.34.76: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-08 11:11:15,522:INFO - Malformed HTTP message from 165.154.195.253: Malformed HTTP request line
+2025-01-08 13:32:28,039:INFO - Malformed HTTP message from 51.81.155.128: Malformed HTTP request line
+2025-01-08 22:35:29,677:INFO - Malformed HTTP message from 167.94.145.110: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-09 22:58:27,074:INFO - Malformed HTTP message from 167.94.138.199: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-10 08:12:34,302:INFO - Malformed HTTP message from 47.252.45.34: Malformed HTTP request line
+2025-01-11 00:37:21,960:INFO - Malformed HTTP message from 162.142.125.38: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-11 16:06:11,531:INFO - Malformed HTTP message from 45.79.115.134: Malformed HTTP version in HTTP Request-Line: 'RTSP/1.0'
+2025-01-11 21:53:48,695:INFO - Malformed HTTP message from 167.94.145.110: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-12 23:03:00,630:INFO - Malformed HTTP message from 162.142.125.33: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-13 23:09:40,873:INFO - Malformed HTTP message from 199.45.154.148: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-14 05:26:53,353:INFO - Malformed HTTP message from 152.32.207.21: Malformed HTTP request line
+2025-01-14 12:32:41,751:INFO - Malformed HTTP message from 118.193.43.141: Malformed HTTP request line
+2025-01-14 12:33:44,867:INFO - Malformed HTTP message from 118.193.43.141: Malformed HTTP request line
+2025-01-14 23:44:11,564:INFO - Malformed HTTP message from 167.94.145.97: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-16 00:49:27,387:INFO - Malformed HTTP message from 47.253.113.33: Malformed HTTP request line
+2025-01-16 01:44:09,545:INFO - Malformed HTTP message from 206.168.34.54: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-17 00:16:54,789:INFO - Malformed HTTP message from 199.45.154.122: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-17 23:56:49,474:INFO - Malformed HTTP message from 167.94.145.97: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-19 04:03:25,543:INFO - Malformed HTTP message from 167.94.146.58: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-19 22:01:25,694:INFO - Malformed HTTP message from 167.94.146.49: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-20 08:04:57,263:INFO - Malformed HTTP message from 171.14.129.134: Malformed HTTP request line
+2025-01-20 22:49:05,111:INFO - Malformed HTTP message from 167.94.145.105: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-20 22:50:41,619:INFO - Malformed HTTP message from 206.168.34.197: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-21 03:50:46,626:INFO - Malformed HTTP message from 167.94.138.59: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-22 08:29:04,814:INFO - Malformed HTTP message from 51.81.155.132: Malformed HTTP request line
+2025-01-22 16:36:13,645:INFO - Malformed HTTP message from 206.168.34.211: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-24 04:13:18,670:INFO - Malformed HTTP message from 104.248.217.47: Malformed HTTP request line
+2025-01-24 04:42:15,797:INFO - Malformed HTTP message from 165.154.195.234: Malformed HTTP request line
+2025-01-24 05:48:49,670:INFO - Malformed HTTP message from 206.168.34.33: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-25 00:07:04,231:INFO - Malformed HTTP message from 167.94.145.111: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-25 19:28:37,117:INFO - Malformed HTTP message from 152.32.133.103: Malformed HTTP request line
+2025-01-25 19:29:40,207:INFO - Malformed HTTP message from 152.32.133.103: Malformed HTTP request line
+2025-01-26 00:05:14,851:INFO - Malformed HTTP message from 167.94.138.53: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-27 00:55:15,699:INFO - Malformed HTTP message from 199.45.155.85: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-27 12:40:41,491:INFO - Malformed HTTP message from 165.154.182.72: Malformed HTTP request line
+2025-01-27 22:41:29,605:INFO - Malformed HTTP message from 167.94.145.103: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-28 22:46:01,241:INFO - Malformed HTTP message from 199.45.154.131: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-30 00:15:02,489:INFO - Malformed HTTP message from 162.142.125.37: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-30 23:34:47,277:INFO - Malformed HTTP message from 167.94.138.176: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-01-31 21:05:28,848:INFO - Malformed HTTP message from 51.81.155.131: Malformed HTTP request line
+2025-02-01 03:07:15,491:INFO - Malformed HTTP message from 167.94.145.110: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-01 05:15:58,260:INFO - Malformed HTTP message from 8.212.163.201: Malformed HTTP request line
+2025-02-02 04:06:35,425:INFO - Malformed HTTP message from 167.94.146.62: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-03 01:36:21,844:INFO - Malformed HTTP message from 167.94.146.52: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-04 00:36:03,114:INFO - Malformed HTTP message from 167.94.146.62: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-04 00:36:28,022:INFO - Malformed HTTP message from 206.168.34.34: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-05 01:27:10,958:INFO - Malformed HTTP message from 199.45.154.156: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-06 01:44:50,397:INFO - Malformed HTTP message from 199.45.154.154: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-07 01:42:01,654:INFO - Malformed HTTP message from 167.94.145.97: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-07 18:47:01,407:INFO - Malformed HTTP message from 152.32.181.210: Malformed HTTP request line
+2025-02-08 01:02:53,476:INFO - Malformed HTTP message from 167.94.138.61: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-08 07:00:00,672:INFO - Malformed HTTP message from 15.204.47.2: Malformed HTTP request line
+2025-02-08 08:11:24,596:INFO - Malformed HTTP message from 118.194.251.17: Malformed HTTP request line
+2025-02-08 08:12:27,782:INFO - Malformed HTTP message from 118.194.251.17: Malformed HTTP request line
+2025-02-09 04:29:39,040:INFO - Malformed HTTP message from 167.94.145.98: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-10 18:41:39,074:INFO - Malformed HTTP message from 162.142.125.193: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-11 10:33:53,792:INFO - Malformed HTTP message from 199.45.155.70: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-12 13:39:36,872:INFO - Malformed HTTP message from 199.45.155.82: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-13 11:24:26,401:INFO - Malformed HTTP message from 167.94.146.50: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-14 10:07:23,346:INFO - Malformed HTTP message from 162.142.125.223: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-14 12:46:30,750:INFO - Malformed HTTP message from 104.156.155.30: Malformed HTTP request line
+2025-02-15 20:29:42,461:INFO - Malformed HTTP message from 206.168.34.211: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-16 09:46:25,895:INFO - Malformed HTTP message from 199.45.155.66: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-17 07:45:20,388:INFO - Malformed HTTP message from 199.45.154.159: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-17 08:48:51,979:INFO - Malformed HTTP message from 173.255.209.220: Malformed HTTP request line
+2025-02-18 03:59:56,626:INFO - Malformed HTTP message from 199.45.154.138: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-19 03:45:29,900:INFO - Malformed HTTP message from 199.45.155.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-19 20:59:18,165:INFO - Malformed HTTP message from 47.252.38.127: Malformed HTTP request line
+2025-02-20 03:16:54,654:INFO - Malformed HTTP message from 162.142.125.221: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-21 02:25:39,411:INFO - Malformed HTTP message from 167.94.145.111: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-21 04:41:04,773:INFO - Malformed HTTP message from 152.32.153.228: Malformed HTTP request line
+2025-02-22 03:21:37,499:INFO - Malformed HTTP message from 167.94.145.111: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-23 18:08:31,335:INFO - Malformed HTTP message from 167.94.138.114: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-25 04:58:11,384:INFO - Malformed HTTP message from 167.94.146.60: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-26 11:35:34,745:INFO - Malformed HTTP message from 199.45.154.117: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-27 06:44:59,932:INFO - Malformed HTTP message from 51.81.155.128: Malformed HTTP request line
+2025-02-27 23:00:26,132:INFO - Malformed HTTP message from 162.142.125.219: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-02-28 04:15:35,867:INFO - Malformed HTTP message from 206.168.34.79: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-01 01:17:19,626:INFO - Malformed HTTP message from 206.168.34.77: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-02 01:33:34,170:INFO - Malformed HTTP message from 199.45.155.106: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-03 02:50:42,453:INFO - Malformed HTTP message from 167.94.145.109: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-04 22:34:42,252:INFO - Malformed HTTP message from 162.142.125.202: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-04 22:36:50,603:INFO - Malformed HTTP message from 167.94.138.199: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-05 17:10:45,714:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2025-03-06 10:09:00,851:INFO - Malformed HTTP message from 206.168.34.205: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-06 10:33:48,070:INFO - Malformed HTTP message from 43.163.238.85: Malformed HTTP request line
+2025-03-06 11:10:24,718:INFO - Malformed HTTP message from 43.163.238.85: Malformed HTTP request line
+2025-03-06 23:12:20,808:INFO - Malformed HTTP message from 206.168.34.84: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-07 16:24:56,456:INFO - Malformed HTTP message from 152.32.247.23: Malformed HTTP request line
+2025-03-07 16:25:59,613:INFO - Malformed HTTP message from 152.32.247.23: Malformed HTTP request line
+2025-03-08 03:59:58,032:INFO - Malformed HTTP message from 162.142.125.198: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-09 04:36:30,517:INFO - Malformed HTTP message from 167.94.145.109: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-09 18:26:06,355:INFO - Malformed HTTP message from 165.154.182.154: Malformed HTTP request line
+2025-03-10 03:51:17,196:INFO - Malformed HTTP message from 167.94.145.104: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-11 01:04:55,049:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-12 02:12:48,740:INFO - Malformed HTTP message from 162.142.125.125: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-12 18:38:51,516:INFO - Malformed HTTP message from 96.126.112.175: Malformed HTTP request line
+2025-03-13 06:39:23,792:INFO - Malformed HTTP message from 199.45.155.71: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-13 18:05:25,450:INFO - Malformed HTTP message from 165.154.10.187: Malformed HTTP request line
+2025-03-13 18:06:28,954:INFO - Malformed HTTP message from 165.154.10.187: Malformed HTTP request line
+2025-03-14 00:58:24,037:INFO - Malformed HTTP message from 199.45.155.96: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-14 10:18:00,357:INFO - Malformed HTTP message from 101.36.97.187: Malformed HTTP request line
+2025-03-15 23:15:28,577:INFO - Malformed HTTP message from 206.168.34.127: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-16 01:08:55,462:INFO - Malformed HTTP message from 167.94.146.56: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-16 22:57:16,557:INFO - Malformed HTTP message from 199.45.154.135: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-17 22:37:22,154:INFO - Malformed HTTP message from 167.94.146.60: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-18 14:58:07,953:INFO - Malformed HTTP message from 8.208.31.171: Malformed HTTP request line
+2025-03-18 23:11:17,497:INFO - Malformed HTTP message from 206.168.34.73: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-19 22:03:34,862:INFO - Malformed HTTP message from 199.45.155.95: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-20 22:26:53,764:INFO - Malformed HTTP message from 167.94.138.121: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-21 12:43:42,677:INFO - Malformed HTTP message from 45.82.78.103: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-03-21 12:43:43,144:INFO - Malformed HTTP message from 45.82.78.103: Malformed HTTP version in HTTP Request-Line: 'RTSP/1.0'
+2025-03-21 12:43:55,759:INFO - Malformed HTTP message from 45.82.78.103: no colon in header line
+2025-03-21 23:25:39,307:INFO - Malformed HTTP message from 199.45.155.78: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-22 22:29:25,894:INFO - Malformed HTTP message from 167.94.146.52: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-23 22:49:54,238:INFO - Malformed HTTP message from 167.94.145.101: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-24 22:21:11,280:INFO - Malformed HTTP message from 206.168.34.123: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-25 21:33:10,612:INFO - Malformed HTTP message from 206.168.34.78: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-27 04:17:50,558:INFO - Malformed HTTP message from 167.94.145.99: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-27 18:47:14,920:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2025-03-28 01:45:28,096:INFO - Malformed HTTP message from 199.45.155.73: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-29 00:02:28,748:INFO - Malformed HTTP message from 199.45.154.149: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-30 00:40:38,660:INFO - Malformed HTTP message from 167.94.145.104: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-30 13:06:03,691:INFO - Malformed HTTP message from 152.32.153.228: Malformed HTTP request line
+2025-03-31 00:12:12,243:INFO - Malformed HTTP message from 167.94.145.101: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-03-31 14:13:09,171:INFO - Malformed HTTP message from 45.82.78.104: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-03-31 14:13:21,540:INFO - Malformed HTTP message from 45.82.78.104: Malformed HTTP version in HTTP Request-Line: 'RTSP/1.0'
+2025-04-01 00:30:05,066:INFO - Malformed HTTP message from 167.94.138.160: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-02 17:35:56,154:INFO - Malformed HTTP message from 143.198.187.27: Malformed HTTP request line
+2025-04-02 20:00:04,273:INFO - Malformed HTTP message from 167.94.138.41: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-03 22:51:49,899:INFO - Malformed HTTP message from 199.45.155.101: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-05 00:08:19,967:INFO - Malformed HTTP message from 206.168.34.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-05 23:43:11,159:INFO - Malformed HTTP message from 167.94.145.108: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-06 01:03:27,935:INFO - Malformed HTTP message from 104.156.155.31: Malformed HTTP request line
+2025-04-07 00:48:22,942:INFO - Malformed HTTP message from 206.168.34.34: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-07 06:06:25,022:INFO - Malformed HTTP message from 165.154.129.151: Malformed HTTP request line
+2025-04-07 06:07:27,816:INFO - Malformed HTTP message from 165.154.129.151: Malformed HTTP request line
+2025-04-07 12:44:29,703:INFO - Malformed HTTP message from 118.193.47.223: Malformed HTTP request line
+2025-04-07 23:50:09,643:INFO - Malformed HTTP message from 199.45.154.127: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-08 23:32:41,758:INFO - Malformed HTTP message from 167.94.145.105: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-09 14:51:11,895:INFO - Malformed HTTP message from 152.32.128.204: Malformed HTTP request line
+2025-04-09 21:35:30,032:INFO - Malformed HTTP message from 199.45.155.92: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-10 23:44:29,077:INFO - Malformed HTTP message from 162.142.125.212: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-12 02:21:49,100:INFO - Malformed HTTP message from 206.168.34.64: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-12 02:29:19,597:INFO - Malformed HTTP message from 167.94.146.59: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-13 05:25:11,915:INFO - Malformed HTTP message from 162.142.125.223: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-14 09:24:28,067:INFO - Malformed HTTP message from 167.94.146.60: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-15 16:21:42,142:INFO - Malformed HTTP message from 167.94.138.45: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-15 18:35:49,181:INFO - Malformed HTTP message from 71.6.134.234: no colon in header line
+2025-04-16 13:44:21,040:INFO - Malformed HTTP message from 167.94.145.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-17 12:11:05,902:INFO - Malformed HTTP message from 199.45.155.68: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-18 08:07:34,174:INFO - Malformed HTTP message from 199.45.154.145: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-19 05:31:28,333:INFO - Malformed HTTP message from 162.142.125.122: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-19 12:24:40,224:INFO - Malformed HTTP message from 152.32.208.7: Malformed HTTP request line
+2025-04-19 12:25:42,891:INFO - Malformed HTTP message from 152.32.208.7: Malformed HTTP request line
+2025-04-20 05:48:27,692:INFO - Malformed HTTP message from 206.168.34.76: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-21 04:51:36,190:INFO - Malformed HTTP message from 199.45.154.132: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-21 07:18:18,808:INFO - Malformed HTTP message from 129.146.24.173: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-21 15:34:12,447:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2025-04-22 15:00:24,556:INFO - Malformed HTTP message from 167.94.138.183: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-23 00:41:10,367:INFO - Malformed HTTP message from 167.94.146.56: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-23 16:57:38,581:INFO - Malformed HTTP message from 45.79.10.7: Malformed HTTP request line
+2025-04-24 00:11:50,937:INFO - Malformed HTTP message from 199.45.155.104: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-25 16:46:25,357:INFO - Malformed HTTP message from 206.168.34.63: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-26 03:57:10,601:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-27 00:36:53,107:INFO - Malformed HTTP message from 199.45.154.133: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-27 18:36:50,510:INFO - Malformed HTTP message from 104.156.155.35: Malformed HTTP request line
+2025-04-27 22:13:36,998:INFO - Malformed HTTP message from 167.94.145.111: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-29 00:14:02,788:INFO - Malformed HTTP message from 162.142.125.124: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-30 16:34:56,988:INFO - Malformed HTTP message from 206.168.34.57: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-04-30 16:58:35,347:INFO - Malformed HTTP message from 47.109.64.71: Malformed HTTP request line
+2025-05-01 02:38:56,226:INFO - Malformed HTTP message from 167.94.145.101: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-02 15:41:14,462:INFO - Malformed HTTP message from 167.94.138.62: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-02 22:36:29,504:INFO - Malformed HTTP message from 206.168.34.112: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-03 20:36:04,032:INFO - Malformed HTTP message from 165.154.11.247: Malformed HTTP request line
+2025-05-03 20:37:07,060:INFO - Malformed HTTP message from 165.154.11.247: Malformed HTTP request line
+2025-05-03 21:37:16,928:INFO - Malformed HTTP message from 206.168.34.216: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-04 19:28:57,499:INFO - Malformed HTTP message from 123.58.196.49: Malformed HTTP request line
+2025-05-04 22:41:17,604:INFO - Malformed HTTP message from 206.168.34.125: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-06 14:14:06,244:INFO - Malformed HTTP message from 167.94.138.167: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-06 20:58:59,684:INFO - Malformed HTTP message from 167.94.138.121: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-07 22:26:53,217:INFO - Malformed HTTP message from 167.94.138.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-08 20:41:21,854:INFO - Malformed HTTP message from 162.142.125.127: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-09 23:00:26,925:INFO - Malformed HTTP message from 162.142.125.119: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-10 18:33:05,428:INFO - Malformed HTTP message from 167.94.138.61: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-11 13:51:44,603:INFO - Malformed HTTP message from 104.156.155.31: Malformed HTTP request line
+2025-05-11 18:16:08,224:INFO - Malformed HTTP message from 167.94.146.48: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-12 23:38:12,537:INFO - Malformed HTTP message from 162.142.125.221: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-13 23:25:40,875:INFO - Malformed HTTP message from 162.142.125.125: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-14 04:05:31,832:INFO - Malformed HTTP message from 118.193.56.149: Malformed HTTP request line
+2025-05-14 21:26:00,033:INFO - Malformed HTTP message from 206.168.34.33: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-15 22:46:11,177:INFO - Malformed HTTP message from 167.94.145.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-16 16:39:26,794:INFO - Malformed HTTP message from 165.154.206.71: Malformed HTTP request line
+2025-05-16 16:39:27,452:INFO - Malformed HTTP message from 165.154.206.71: Malformed HTTP request line
+2025-05-16 16:39:27,832:INFO - Malformed HTTP message from 165.154.206.71: Malformed HTTP request line
+2025-05-16 22:13:56,608:INFO - Malformed HTTP message from 199.45.155.84: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-17 20:49:22,255:INFO - Malformed HTTP message from 167.94.146.49: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-19 00:06:02,685:INFO - Malformed HTTP message from 199.45.155.97: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-19 00:22:29,529:INFO - Malformed HTTP message from 206.168.34.112: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-19 19:27:56,843:INFO - Malformed HTTP message from 167.94.138.51: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-20 08:00:15,873:INFO - Malformed HTTP message from 189.230.168.139: Malformed HTTP request line
+2025-05-20 20:06:38,496:INFO - Malformed HTTP message from 199.45.155.75: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-21 04:47:20,424:INFO - Malformed HTTP message from 106.119.184.3: Malformed HTTP request line
+2025-05-21 22:13:48,932:INFO - Malformed HTTP message from 206.168.34.44: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-22 14:35:33,455:INFO - Malformed HTTP message from 143.110.130.4: Malformed HTTP request line
+2025-05-23 03:29:55,543:INFO - Malformed HTTP message from 104.156.155.31: Malformed HTTP request line
+2025-05-23 04:21:31,107:INFO - Malformed HTTP message from 206.168.34.87: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-24 13:34:01,986:INFO - Malformed HTTP message from 167.94.138.194: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-25 00:39:39,978:INFO - Malformed HTTP message from 162.142.125.197: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-26 07:17:34,133:INFO - Malformed HTTP message from 167.94.145.97: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-26 20:34:16,991:INFO - Malformed HTTP message from 152.32.225.99: Malformed HTTP request line
+2025-05-26 20:35:20,067:INFO - Malformed HTTP message from 152.32.225.99: Malformed HTTP request line
+2025-05-27 05:35:21,736:INFO - Malformed HTTP message from 206.168.34.70: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-28 12:51:51,031:INFO - Malformed HTTP message from 206.168.34.193: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-28 16:24:37,099:INFO - Malformed HTTP message from 71.6.134.234: Malformed HTTP version in HTTP Request-Line: ''
+2025-05-29 06:45:31,161:INFO - Malformed HTTP message from 167.94.146.57: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-29 09:22:45,350:INFO - Malformed HTTP message from 152.32.235.78: Malformed HTTP request line
+2025-05-30 09:38:20,832:INFO - Malformed HTTP message from 162.142.125.119: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-05-31 05:48:18,747:INFO - Malformed HTTP message from 51.81.155.128: Malformed HTTP request line
+2025-05-31 06:38:17,518:INFO - Malformed HTTP message from 167.94.145.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-01 06:34:57,342:INFO - Malformed HTTP message from 167.94.145.101: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-02 09:26:40,502:INFO - Malformed HTTP message from 199.45.154.127: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-03 09:22:45,603:INFO - Malformed HTTP message from 43.132.196.160: Malformed HTTP request line
+2025-06-03 16:55:09,770:INFO - Malformed HTTP message from 167.94.138.166: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-05 01:24:20,968:INFO - Malformed HTTP message from 167.94.138.179: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-05 08:46:42,046:INFO - Malformed HTTP message from 167.94.138.206: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-06 15:14:17,355:INFO - Malformed HTTP message from 162.142.125.124: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-07 08:27:30,713:INFO - Malformed HTTP message from 199.45.155.110: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-08 04:01:13,699:INFO - Malformed HTTP message from 157.245.241.181: Malformed HTTP request line
+2025-06-08 15:01:14,891:INFO - Malformed HTTP message from 162.142.125.219: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-08 15:03:02,642:INFO - Malformed HTTP message from 206.168.34.194: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-08 18:21:38,993:INFO - Malformed HTTP message from 104.156.155.31: Malformed HTTP request line
+2025-06-09 17:26:25,961:INFO - Malformed HTTP message from 199.45.155.86: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-11 04:24:36,457:INFO - Malformed HTTP message from 206.168.34.211: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-11 14:49:57,333:INFO - Malformed HTTP message from 199.45.154.112: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-12 17:26:44,985:INFO - Malformed HTTP message from 167.94.138.195: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-13 19:12:58,693:INFO - Malformed HTTP message from 199.45.154.142: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-14 06:53:48,408:INFO - Malformed HTTP message from 152.32.139.190: Malformed HTTP request line
+2025-06-15 00:47:11,887:INFO - Malformed HTTP message from 206.168.34.116: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-15 00:51:57,039:INFO - Malformed HTTP message from 206.168.34.68: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-15 12:49:21,404:INFO - Malformed HTTP message from 142.93.3.4: Malformed HTTP request line
+2025-06-15 14:42:59,084:INFO - Malformed HTTP message from 199.45.155.99: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-15 17:20:01,658:INFO - Malformed HTTP message from 165.154.172.108: Malformed HTTP request line
+2025-06-16 06:34:10,911:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2025-06-17 01:45:48,214:INFO - Malformed HTTP message from 146.190.75.249: Malformed HTTP request line
+2025-06-17 02:51:53,680:INFO - Malformed HTTP message from 206.168.34.76: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-17 03:06:02,771:INFO - Malformed HTTP message from 167.94.138.205: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-18 07:24:42,490:INFO - Malformed HTTP message from 167.94.146.51: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-19 09:33:31,056:INFO - Malformed HTTP message from 162.142.125.201: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-20 13:39:50,253:INFO - Malformed HTTP message from 199.45.155.79: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-21 14:16:42,285:INFO - Malformed HTTP message from 206.168.34.71: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-21 20:37:46,094:INFO - Malformed HTTP message from 206.168.34.67: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-21 20:37:58,169:INFO - Malformed HTTP message from 206.168.34.67: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-21 21:14:59,313:INFO - Malformed HTTP message from 152.32.225.99: Malformed HTTP request line
+2025-06-21 21:16:02,398:INFO - Malformed HTTP message from 152.32.225.99: Malformed HTTP request line
+2025-06-22 21:04:15,894:INFO - Malformed HTTP message from 206.168.34.115: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-22 21:04:24,112:INFO - Malformed HTTP message from 206.168.34.115: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-23 15:10:02,230:INFO - Malformed HTTP message from 199.45.155.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-23 15:10:07,991:INFO - Malformed HTTP message from 199.45.155.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-24 12:08:32,881:INFO - Malformed HTTP message from 199.45.154.122: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-24 12:08:37,313:INFO - Malformed HTTP message from 199.45.154.122: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-25 11:51:19,140:INFO - Malformed HTTP message from 199.45.154.146: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-25 11:51:24,509:INFO - Malformed HTTP message from 199.45.154.146: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-25 13:26:33,413:INFO - Malformed HTTP message from 162.142.125.126: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-25 13:26:47,527:INFO - Malformed HTTP message from 162.142.125.126: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-26 14:04:17,926:INFO - Malformed HTTP message from 206.168.34.61: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-26 14:04:39,554:INFO - Malformed HTTP message from 206.168.34.61: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-27 12:21:22,029:INFO - Malformed HTTP message from 162.142.125.201: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-27 12:21:27,110:INFO - Malformed HTTP message from 162.142.125.201: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-28 07:57:24,131:INFO - Malformed HTTP message from 167.94.146.52: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-28 07:57:28,046:INFO - Malformed HTTP message from 167.94.146.52: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-29 08:18:17,058:INFO - Malformed HTTP message from 199.45.154.152: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-29 08:18:21,828:INFO - Malformed HTTP message from 199.45.154.152: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-29 08:59:24,163:INFO - Malformed HTTP message from 167.94.138.198: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-29 08:59:35,426:INFO - Malformed HTTP message from 167.94.138.198: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-30 08:24:57,430:INFO - Malformed HTTP message from 199.45.154.115: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-06-30 08:25:00,962:INFO - Malformed HTTP message from 199.45.154.115: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-01 08:59:13,479:INFO - Malformed HTTP message from 162.142.125.213: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-01 08:59:17,242:INFO - Malformed HTTP message from 162.142.125.213: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-01 15:01:58,780:INFO - Malformed HTTP message from 118.194.251.141: Malformed HTTP request line
+2025-07-02 09:53:59,208:INFO - Malformed HTTP message from 165.154.118.145: Malformed HTTP request line
+2025-07-02 09:55:02,431:INFO - Malformed HTTP message from 165.154.118.145: Malformed HTTP request line
+2025-07-02 09:57:30,666:INFO - Malformed HTTP message from 206.168.34.71: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-02 09:57:36,291:INFO - Malformed HTTP message from 206.168.34.71: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-02 11:49:17,203:INFO - Malformed HTTP message from 199.45.155.97: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-02 11:49:23,134:INFO - Malformed HTTP message from 199.45.155.97: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-03 06:54:06,034:INFO - Malformed HTTP message from 206.168.34.71: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-03 06:54:09,213:INFO - Malformed HTTP message from 206.168.34.71: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-04 07:57:09,891:INFO - Malformed HTTP message from 162.142.125.214: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-04 07:57:14,342:INFO - Malformed HTTP message from 162.142.125.214: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-04 12:16:58,603:INFO - Malformed HTTP message from 167.94.138.184: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-04 12:17:06,784:INFO - Malformed HTTP message from 167.94.138.184: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-05 06:46:28,997:INFO - Malformed HTTP message from 167.94.138.127: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-05 06:46:43,205:INFO - Malformed HTTP message from 167.94.138.127: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-06 07:15:51,695:INFO - Malformed HTTP message from 167.94.145.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-06 07:15:55,880:INFO - Malformed HTTP message from 167.94.145.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-06 07:55:08,881:INFO - Malformed HTTP message from 162.142.125.211: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-06 07:55:30,002:INFO - Malformed HTTP message from 162.142.125.211: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-07 08:55:23,252:INFO - Malformed HTTP message from 206.168.34.71: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-07 08:55:36,708:INFO - Malformed HTTP message from 206.168.34.71: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-08 07:33:00,834:INFO - Malformed HTTP message from 167.94.138.42: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-08 07:33:10,990:INFO - Malformed HTTP message from 167.94.138.42: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-09 07:23:23,608:INFO - Malformed HTTP message from 167.94.138.53: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-09 07:23:37,523:INFO - Malformed HTTP message from 167.94.138.53: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-09 07:56:31,577:INFO - Malformed HTTP message from 206.168.34.88: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-09 07:56:57,264:INFO - Malformed HTTP message from 206.168.34.88: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-09 08:55:25,632:INFO - Malformed HTTP message from 123.57.55.102: Malformed HTTP request line
+2025-07-10 06:42:42,535:INFO - Malformed HTTP message from 167.94.145.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-10 06:42:45,939:INFO - Malformed HTTP message from 167.94.145.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-11 07:18:17,183:INFO - Malformed HTTP message from 162.142.125.34: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-11 07:18:31,570:INFO - Malformed HTTP message from 162.142.125.34: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-11 07:34:52,555:INFO - Malformed HTTP message from 167.94.146.57: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-11 07:34:56,702:INFO - Malformed HTTP message from 167.94.146.57: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-11 19:45:33,737:INFO - Malformed HTTP message from 118.193.57.121: Malformed HTTP request line
+2025-07-11 19:46:36,909:INFO - Malformed HTTP message from 118.193.57.121: Malformed HTTP request line
+2025-07-12 07:34:32,416:INFO - Malformed HTTP message from 199.45.154.123: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-12 07:34:36,278:INFO - Malformed HTTP message from 199.45.154.123: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-12 07:56:39,043:INFO - Malformed HTTP message from 167.94.138.185: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-12 07:56:43,729:INFO - Malformed HTTP message from 167.94.138.185: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-12 14:22:41,873:INFO - Malformed HTTP message from 23.92.31.179: Malformed HTTP request line
+2025-07-13 07:17:56,194:INFO - Malformed HTTP message from 162.142.125.123: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-13 07:18:09,613:INFO - Malformed HTTP message from 162.142.125.123: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-14 07:58:36,186:INFO - Malformed HTTP message from 167.94.138.113: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-14 07:58:59,155:INFO - Malformed HTTP message from 167.94.138.113: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-14 10:13:55,305:INFO - Malformed HTTP message from 167.94.146.51: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-14 10:13:58,942:INFO - Malformed HTTP message from 167.94.146.51: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-15 07:55:46,003:INFO - Malformed HTTP message from 167.94.145.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-15 07:55:50,665:INFO - Malformed HTTP message from 167.94.145.107: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-16 09:01:05,422:INFO - Malformed HTTP message from 167.94.138.60: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-16 09:01:48,989:INFO - Malformed HTTP message from 167.94.138.60: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-16 17:32:25,897:INFO - Malformed HTTP message from 206.168.34.34: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-16 17:32:32,075:INFO - Malformed HTTP message from 206.168.34.34: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-17 14:28:57,418:INFO - Malformed HTTP message from 199.45.155.84: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-17 14:29:02,563:INFO - Malformed HTTP message from 199.45.155.84: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-18 07:36:00,986:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-18 07:36:07,070:INFO - Malformed HTTP message from 167.94.146.55: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-19 07:58:01,541:INFO - Malformed HTTP message from 167.94.138.37: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-19 07:58:10,125:INFO - Malformed HTTP message from 167.94.138.37: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-19 11:16:27,860:INFO - Malformed HTTP message from 199.45.154.129: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-19 11:16:33,806:INFO - Malformed HTTP message from 199.45.154.129: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-20 07:57:08,987:INFO - Malformed HTTP message from 199.45.155.80: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-20 07:57:13,137:INFO - Malformed HTTP message from 199.45.155.80: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-20 19:00:21,793:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2025-07-21 05:11:53,132:INFO - Malformed HTTP message from 118.194.236.137: Malformed HTTP request line
+2025-07-21 08:59:18,847:INFO - Malformed HTTP message from 206.168.34.39: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-21 08:59:26,715:INFO - Malformed HTTP message from 206.168.34.39: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-22 07:20:15,277:INFO - Malformed HTTP message from 206.168.34.90: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-22 07:20:20,464:INFO - Malformed HTTP message from 206.168.34.90: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-23 07:45:45,281:INFO - Malformed HTTP message from 206.168.34.66: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-23 07:45:53,464:INFO - Malformed HTTP message from 206.168.34.66: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-23 07:57:31,922:INFO - Malformed HTTP message from 167.94.138.34: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-23 07:57:48,075:INFO - Malformed HTTP message from 167.94.138.34: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-24 08:19:06,142:INFO - Malformed HTTP message from 199.45.154.117: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-24 08:19:10,540:INFO - Malformed HTTP message from 199.45.154.117: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-24 08:57:03,892:INFO - Malformed HTTP message from 167.94.138.185: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-24 08:57:12,415:INFO - Malformed HTTP message from 167.94.138.185: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-24 21:38:07,915:INFO - Malformed HTTP message from 165.154.135.73: Malformed HTTP request line
+2025-07-24 21:39:10,716:INFO - Malformed HTTP message from 165.154.135.73: Malformed HTTP request line
+2025-07-25 08:44:57,304:INFO - Malformed HTTP message from 199.45.155.100: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-25 08:45:03,051:INFO - Malformed HTTP message from 199.45.155.100: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-26 05:53:52,114:INFO - Malformed HTTP message from 167.94.138.177: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-26 05:53:58,778:INFO - Malformed HTTP message from 167.94.138.177: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-26 22:31:02,352:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-27 00:33:59,408:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-27 04:40:03,071:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-27 06:43:10,025:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-27 06:59:36,126:INFO - Malformed HTTP message from 167.94.138.120: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-27 07:00:01,788:INFO - Malformed HTTP message from 167.94.138.120: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-27 07:24:21,924:INFO - Malformed HTTP message from 167.94.146.48: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-27 07:24:26,490:INFO - Malformed HTTP message from 167.94.146.48: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-27 10:57:55,843:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-27 11:27:55,891:INFO - Malformed HTTP message from 185.16.39.136: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-27 11:27:57,083:INFO - Malformed HTTP message from 185.16.39.136: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-27 11:27:58,831:INFO - Malformed HTTP message from 185.16.39.136: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-27 11:28:01,522:INFO - Malformed HTTP message from 185.16.39.136: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-27 15:11:16,250:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-27 19:27:41,370:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-27 21:36:15,988:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-28 02:21:31,020:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-28 04:30:34,964:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-28 06:38:59,227:INFO - Malformed HTTP message from 23.94.177.222: Malformed HTTP version in HTTP Request-Line: 'SIP/2.0'
+2025-07-28 07:07:40,444:INFO - Malformed HTTP message from 61.142.57.14: Malformed HTTP request line
+2025-07-28 08:06:20,940:INFO - Malformed HTTP message from 167.94.138.113: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-28 08:06:50,436:INFO - Malformed HTTP message from 167.94.138.113: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-28 08:30:31,121:INFO - Malformed HTTP message from 165.154.164.92: Malformed HTTP request line
+2025-07-28 13:44:33,531:INFO - Malformed HTTP message from 167.94.145.96: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-28 13:44:38,992:INFO - Malformed HTTP message from 167.94.145.96: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-29 13:39:28,404:INFO - Malformed HTTP message from 162.142.125.113: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-29 13:39:39,131:INFO - Malformed HTTP message from 162.142.125.113: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-29 14:11:57,963:INFO - Malformed HTTP message from 206.168.34.122: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-29 14:12:15,633:INFO - Malformed HTTP message from 206.168.34.122: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-30 07:51:29,865:INFO - Malformed HTTP message from 199.45.154.126: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-30 07:51:34,512:INFO - Malformed HTTP message from 199.45.154.126: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-31 08:09:14,615:INFO - Malformed HTTP message from 162.142.125.120: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-31 08:09:28,436:INFO - Malformed HTTP message from 162.142.125.120: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-31 08:57:21,998:INFO - Malformed HTTP message from 167.94.138.116: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-07-31 08:57:59,081:INFO - Malformed HTTP message from 167.94.138.116: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-01 00:41:20,418:INFO - Malformed HTTP message from 157.230.9.197: Malformed HTTP request line
+2025-08-01 08:08:40,049:INFO - Malformed HTTP message from 206.168.34.95: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-01 08:08:58,407:INFO - Malformed HTTP message from 206.168.34.95: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-02 08:30:09,301:INFO - Malformed HTTP message from 167.94.138.176: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-02 08:30:21,192:INFO - Malformed HTTP message from 167.94.138.176: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-02 08:54:07,383:INFO - Malformed HTTP message from 206.168.34.79: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-02 08:54:56,423:INFO - Malformed HTTP message from 206.168.34.79: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-03 10:11:16,292:INFO - Malformed HTTP message from 162.142.125.207: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-03 10:11:43,848:INFO - Malformed HTTP message from 162.142.125.207: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-03 15:26:08,500:INFO - Malformed HTTP message from 139.144.52.241: Malformed HTTP request line
+2025-08-04 11:04:53,356:INFO - Malformed HTTP message from 162.142.125.196: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-04 11:05:20,524:INFO - Malformed HTTP message from 162.142.125.196: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-05 11:56:48,849:INFO - Malformed HTTP message from 162.142.125.211: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-05 11:56:57,598:INFO - Malformed HTTP message from 162.142.125.211: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-05 11:57:27,825:INFO - Malformed HTTP message from 162.142.125.119: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-05 11:57:40,179:INFO - Malformed HTTP message from 162.142.125.119: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-06 12:55:28,299:INFO - Malformed HTTP message from 206.168.34.79: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-06 12:57:14,663:INFO - Malformed HTTP message from 206.168.34.79: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-06 14:51:26,433:INFO - Malformed HTTP message from 199.45.154.118: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-06 14:51:33,146:INFO - Malformed HTTP message from 199.45.154.118: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-07 12:43:15,712:INFO - Malformed HTTP message from 167.94.145.110: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-07 12:43:20,316:INFO - Malformed HTTP message from 167.94.145.110: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-08 07:26:21,507:INFO - Malformed HTTP message from 167.94.138.202: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-08 07:26:34,515:INFO - Malformed HTTP message from 167.94.138.202: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-09 07:35:23,053:INFO - Malformed HTTP message from 199.45.154.120: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-09 07:35:27,016:INFO - Malformed HTTP message from 199.45.154.120: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-09 07:59:42,783:INFO - Malformed HTTP message from 206.168.34.46: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-09 08:00:32,468:INFO - Malformed HTTP message from 206.168.34.46: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-10 07:38:34,274:INFO - Malformed HTTP message from 206.168.34.86: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-10 07:38:41,605:INFO - Malformed HTTP message from 206.168.34.86: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-11 07:59:13,707:INFO - Malformed HTTP message from 206.168.34.56: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-11 08:01:17,822:INFO - Malformed HTTP message from 206.168.34.56: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-11 08:30:29,508:INFO - Malformed HTTP message from 206.168.34.71: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
+2025-08-11 08:30:35,953:INFO - Malformed HTTP message from 206.168.34.71: Malformed HTTP version in HTTP Request-Line: 'HTTP/2.0'
