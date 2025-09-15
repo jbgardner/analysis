@@ -1,0 +1,85 @@
+<body
+  style="
+    font-family: roboto;
+    line-height: 20px;
+    padding: 10px 20px;
+    width: 80%;
+    background-color: white;
+    color: #17202A;
+    margin: 0 auto;
+  "
+>
+  <h3>CEOBuySell.com</h3>
+  <hr />
+
+  <div>
+    <div>
+        <h1 style="text-align: center; margin-bottom:0px">
+          Weekly sector report - Week {{ week_number }} 
+        </h1>
+        <p style="text-align: center">Here is the top 3 of each sector for this week</p>
+
+        {% for key, value in trades.items() %}
+          <br/>
+          <h3>
+            {{ key }}
+            <a href="{{ search_link }}&sector={{ value['sector_id'] }}" target="_blank" style="color:#016bad; font-weight:normal; font-size:12px; text-decoration:underline">(view all)</a>
+          </h3>
+          {% if value['p']|length != 0 %}
+            {% for item in value['p'] %}
+              {% with item=item %}
+                {% include 'card.html' %}
+              {% endwith %}
+            {% endfor %}
+          {% endif %}
+  
+          {% if value['s']|length != 0 %}
+            {% for item in value['s'] %}
+              {% with item=item %}
+                {% include 'card.html' %}
+              {% endwith %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+    </div>
+
+    <br />
+    <p style="text-align: center">
+      Don't forget to enable real-time notifications, click the button to get
+      started.
+    </p>
+    <div style="text-align: center">
+      <a
+        href="{{ dashboard }}"
+        target="_blank"
+        style="
+          text-decoration: none;
+          background-color: #222645;
+          color: #fff;
+          padding: 15px 25px;
+          margin-top: 10px;
+          border-radius: 5px;
+          display: inline-block;
+        "
+        >Access Dashboard
+      </a>
+    </div>
+    <br />
+
+    <hr />
+    <br />
+
+    <p>
+      Copyright © 2025 CEOBuySell.com.com. All rights reserved.
+      <br />
+      Click
+      <a
+        href="{{ cancellation_url }}"
+        target="_blank"
+        style="text-decoration: underline; color: #016bad"
+        >here</a
+      >
+      to unsubscribe.
+    </p>
+  </div>
+</body>

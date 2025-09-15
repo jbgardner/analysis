@@ -1,0 +1,53 @@
+{% if item.transaction_type == 'p' %}
+    <div style="background-color: #F2F3F4; margin:10px 0px;padding:10px 20px; border-radius:10px;font-size:14px">
+        <div>
+            <p>
+                <span style="text-transform: uppercase; color: #5d69d2; font-weight:bold">{{ item.ticker }}</span>
+                <br>
+                <b style="text-transform: capitalize;">{{ item.ceo_name }}</b>
+                <span style="color:#566573">the CEO of</span>
+                <b>{{ item.company_name }}</b>,
+                <span style="color:#566573">Bought</span>
+                <b>{{ item.total_shares }}</b>
+                <span style="color:#566573">shares at</span>
+                <b>${{ item.share_price }}</b>
+                <span style="color:#566573">for a total amount of</span>
+                <b>${{ item.total_amount_spent }}.</b>
+                <br>
+                <span style="color:#566573">The CEO now owns</span>
+                <b>{{ item.total_shares_after_transaction }}</b>
+                <span style="color:#566573">shares</span>
+                <b style="color:#419a57">(+{{ item.change_in_shares_percentage }})</b>.
+                <a href="{{ item.link }}" target="_blank" style="color:#5d69d2">
+                    <i style="margin-left: 5px">{{ item.periodOfReport }}.</i>
+                </a>
+            </p>                        
+        </div>
+    </div>
+{% else %}
+    <div style="background-color: #F2F3F4; margin:10px 0px;padding:20px; border-radius:10px;font-size:14px">
+        <div>
+            <p>
+                <span style="text-transform: uppercase; color: #5d69d2; font-weight:bold">{{ item.ticker }}</span>
+                <br>
+                <b style="text-transform: capitalize;">{{ item.ceo_name }}</b>
+                <span style="color:#566573">the CEO of</span>
+                <b>{{ item.company_name }}</b>,
+                <span style="color:#566573">Sold</span>
+                <b>{{ item.total_shares }}</b>
+                <span style="color:#566573">shares at</span>
+                <b>${{ item.share_price }}</b>
+                <span style="color:#566573">for a total amount of</span>
+                <b>${{ item.total_amount_spent }}.</b>
+                <br>
+                <span style="color:#566573">The CEO now owns</span>
+                <b>{{ item.total_shares_after_transaction }}</b>
+                <span style="color:#566573">shares</span>
+                <b style="color:#7B241C ">(-{{ item.change_in_shares_percentage }})</b>.
+                <a href="{{ item.link }}" target="_blank" style="color:#5d69d2">
+                    <i style="margin-left: 5px">{{ item.periodOfReport }}.</i>
+                </a>
+            </p>                        
+        </div>
+    </div>
+{% endif %}

@@ -1,0 +1,95 @@
+<body
+  style="
+    font-family: roboto;
+    line-height: 20px;
+    padding: 10px 20px;
+    width: 80%;
+    background-color: white;
+    color: #17202A;
+    margin: 0 auto;
+  "
+>
+  <h3>CEOBuySell.com</h3>
+  <hr />
+
+  <div>
+    <div>
+        <br/>
+        <h2 style="text-align: center">
+            <span>{{ data.ticker }}'s</span> CEO just 
+            {% if data.transaction_type == 'p' %}
+                acquired 
+            {% else %}
+                disposed 
+            {% endif %}
+            shares today!
+        </h2>
+
+        <br />
+        {% with item=data %}
+          {% include 'card.html' %}
+        {% endwith %}
+    </div>
+
+    <br />
+    <div style="text-align: center">
+      <a
+        href="{{ data.link }}"
+        target="_blank"
+        style="
+          text-decoration: none;
+          background-color: #222645;
+          color: #fff;
+          padding: 15px 25px;
+          margin-top: 10px;
+          border-radius: 5px;
+          display: inline-block;
+        "
+        >View SEC Filing
+      </a>
+    </div>
+    <br />
+
+    <br/>
+    <h2>
+      Track record:
+    </h2>
+    <div>
+      {% if track_record|length %}
+  
+        {% for i in track_record %}
+            {% with item=i %}
+              {% include 'card.html' %}
+            {% endwith %}
+        {% endfor %}
+
+      {% else %}
+
+        {% if data.transaction_type == 'p' %}
+            <p style="color:#566573">This is the first time this CEO purchased shares at market price. It could be a bullish sign!</p>
+        {% else %}
+            <p style="color:#566573">This is the first time this CEO sold shares at market price. It could be a bearish sign!</p>
+        {% endif %}
+
+      {% endif %}
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
+    <p>
+      Copyright © 2025 CEOBuySell.com. All rights reserved.
+      <br />
+      Click
+      <a
+        href="{{ cancellation_url }}"
+        target="_blank"
+        style="text-decoration: underline; color: #016bad"
+        >here</a
+      >
+      to unsubscribe.
+    </p>
+  </div>
+</body>
+
